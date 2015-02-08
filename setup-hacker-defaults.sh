@@ -61,7 +61,7 @@ case $yn in
   [Yy]* ) defaults write com.apple.helpviewer DevMode -bool true
 esac
 
-read -p "Allow quitting the Finder with ⌘Q? (y/n) " yn
+read -p "Allow quitting the Finder with ⌘ Q? (y/n) " yn
 case $yn in
   [Yy]* ) defaults write com.apple.finder QuitMenuItem -bool true
 esac
