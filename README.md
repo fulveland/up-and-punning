@@ -15,3 +15,30 @@ git clone git@github.com:ivanreese/up-and-punning.git && bash up-and-punning/set
 ```
 
 Watch out for that `rm -rf` yo ;)
+
+## So.. um.. come here often?
+
+No. You only run this to do an initial setup. There's no point in running it more than once.
+
+Just.. so you know.. here's what it does.
+
+1. Homebrew
+    * Install Homebrew, if necessary
+    * `brew update`
+    * `brew install git`
+    * `brew install rbenv`
+    * `brew install ruby-build`
+    * `brew install heroku-toolbelt`
+2. Ruby
+    * Install the latest version and setup rbenv, if necessary
+    * `gem update --system`
+    * `gem install bundler`
+    * `gem install powder`
+    * `gem install tunnels`
+    * `gem install rspec`
+    * `rbenv rehash`
+3. SSH
+    * Prompts you for how many SSH keys you'd like to setup
+    * Umm.. helps you set up the keys. Obvs.
+4. Dotfiles
+    * Automates the process of setting up [my dotfiles](https://github.com/ivanreese/dotfiles).
