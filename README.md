@@ -11,5 +11,7 @@ fuck, I don't know. Good luck?
 Just run this line in yer term:
 
 ```bash
-git clone git@github.com:ivanreese/up-and-punning.git && cd up-and-punning && bash setup.sh
+git clone git@github.com:ivanreese/up-and-punning.git && bash up-and-punning/setup.sh && rm -rf up-and-punning
 ```
+
+Watch out for that `rm -rf` yo ;)
