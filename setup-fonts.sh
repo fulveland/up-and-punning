@@ -10,9 +10,8 @@ fancy_echo() {
 get_font() {
   fancy_echo "Downloading $2"
   curl $1 -o $2
-  case $yn in
-    [Yy]* ) open $2 && read -p "Hit enter to continue" yn;;
-  esac
+  open $2
+  read -p "Hit enter to continue"
   rm $2
 }
 
