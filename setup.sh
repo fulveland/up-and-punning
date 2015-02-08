@@ -18,7 +18,7 @@ run() {
 }
 
 
-read -p "Ready? (y/n) " yn
+read -p "ARE YOU READY‽‽‽ (y/n) " yn
 case $yn in
   [Yy]* ) run;;
 esac
