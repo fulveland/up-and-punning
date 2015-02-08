@@ -24,4 +24,5 @@ run() {
 read -p "ARE YOU READY‽‽‽ (y/n) " yn
 case $yn in
   [Yy]* ) run;;
+  * ) fancy_echo "FUUUUCK YOU";;
 esac
