@@ -23,22 +23,22 @@ No. You only run this to do an initial setup. There's no point in running it mor
 Just.. so you know.. here's what it does.
 
 1. Homebrew
-    * Install Homebrew, if necessary
-    * `brew update`
-    * `brew install git`
-    * `brew install rbenv`
-    * `brew install ruby-build`
-    * `brew install heroku-toolbelt`
+  * Install Homebrew, if necessary, then...
+  * `brew update`
+  * `brew install git`
+  * `brew install rbenv`
+  * `brew install ruby-build`
+  * `brew install heroku-toolbelt`
 2. Ruby
-    * Install the latest version and setup rbenv, if necessary
-    * `gem update --system`
-    * `gem install bundler`
-    * `gem install powder`
-    * `gem install tunnels`
-    * `gem install rspec`
-    * `rbenv rehash`
+  * Install the latest version and setup rbenv, if necessary, then...
+  * `gem update --system`
+  * `gem install bundler`
+  * `gem install powder`
+  * `gem install tunnels`
+  * `gem install rspec`
+  * `rbenv rehash`
 3. SSH
-    * Prompts you for how many SSH keys you'd like to setup
-    * Umm.. helps you set up the keys. Obvs.
+  * Prompts you for how many SSH keys you'd like to setup
+  * Umm.. helps you set up the keys. Obvs.
 4. Dotfiles
-    * Automates the process of setting up [my dotfiles](https://github.com/ivanreese/dotfiles).
+  * Automates the process of setting up [my dotfiles](https://github.com/ivanreese/dotfiles).
