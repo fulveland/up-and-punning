@@ -42,3 +42,5 @@ Just.. so you know.. here's what it does.
   * Umm.. helps you set up the keys. Obvs.
 4. Dotfiles
   * Automates the process of setting up [my dotfiles](https://github.com/ivanreese/dotfiles).
+5. Fonts
+  * Inconsolata

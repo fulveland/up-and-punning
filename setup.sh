@@ -16,6 +16,7 @@ run() {
   bash setup-ruby.sh
   bash setup-ssh.sh
   bash setup-dotfiles.sh
+  bash setup-fonts.sh
 
   fancy_echo "Honey, you're home!"
 }
