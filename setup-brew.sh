@@ -4,7 +4,7 @@ set -e
 
 fancy_echo() {
   local fmt="$1"; shift
-  printf "\n\xF0\x9F\x8D\xBB  $fmt\n" "$@"
+  printf "\xF0\x9F\x8D\xBB  $fmt\n" "$@"
 }
 
 brew_install() {

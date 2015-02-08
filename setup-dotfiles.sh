@@ -4,7 +4,7 @@ set -e
 
 fancy_echo() {
   local fmt="$1"; shift
-  printf "\n⨀⨀ $fmt\n" "$@"
+  printf "⨀⨀ $fmt\n" "$@"
 }
 
 run() {
@@ -13,7 +13,7 @@ run() {
   git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
   bash bootstrap.sh
-  
+
   fancy_echo "Well, we're in Kansas now. Or maybe Arkansas."
 }
 

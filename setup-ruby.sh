@@ -4,7 +4,7 @@ set -e
 
 fancy_echo() {
   local fmt="$1"; shift
-  printf "\n\xE2\x99\xA6\xEF\xB8\x8F  $fmt\n" "$@"
+  printf "\xE2\x99\xA6\xEF\xB8\x8F  $fmt\n" "$@"
 }
 
 gem_install() {
