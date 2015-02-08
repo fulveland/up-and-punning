@@ -220,6 +220,8 @@
     Tracking speed: 4th from the top, under 'pe'
   Sound
     Sound Effects
+      Select an alert sound: Pop
+      Play sound effects through: Selected sound output device
       Play user interface sound effects: Off
   iCloud
     Turn on iCloud Keychain
