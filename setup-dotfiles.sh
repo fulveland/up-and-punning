@@ -7,17 +7,11 @@ fancy_echo() {
   printf "⨀⨀ $fmt\n" "$@"
 }
 
-run() {
-  fancy_echo "Hold on, Toto!"
 
-  git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
-  cd ~/.dotfiles
-  bash bootstrap.sh
+fancy_echo "Hold on, Toto!"
 
-  fancy_echo "Well, we're in Kansas now. Or maybe Arkansas."
-}
+git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+bash bootstrap.sh
 
-read -p "May I interest you in some dotfiles? (y/n) " yn
-case $yn in
-  [Yy]* ) run;;
-esac
+fancy_echo "Well, we're in Kansas now. Or maybe Arkansas."

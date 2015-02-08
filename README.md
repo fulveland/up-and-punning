@@ -44,3 +44,5 @@ Just.. so you know.. here's what it does.
   * Automates the process of setting up [my dotfiles](https://github.com/ivanreese/dotfiles).
 5. Fonts
   * Inconsolata
+6. Hacker Defaults
+  * Yeah! My own custom set of sensible hacker defaults. Inspired by [Mathias](https://github.com/mathiasbynens/dotfiles/blob/master/.osx).

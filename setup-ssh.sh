@@ -58,5 +58,6 @@ run() {
 
 read -p "How many SSH keys would you like to set up? " count
 case $count in
+  [0]) fancy_echo "LIAR!";;
   [1-9]) run;;
 esac

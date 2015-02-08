@@ -16,15 +16,8 @@ get_font() {
   rm $2
 }
 
-run() {
-  fancy_echo "I am NOT your type."
+fancy_echo "I am NOT your type."
 
-  get_font http://levien.com/type/myfonts/Inconsolata.otf Inconsolata.otf
+get_font http://levien.com/type/myfonts/Inconsolata.otf Inconsolata.otf
 
-  fancy_echo "Don't you take a hint? I could sure do sans-you right now."
-}
-
-read -p "May I interest you in a fonts? (y/n) " yn
-case $yn in
-  [Yy]* ) run;;
-esac
+fancy_echo "Don't you take a hint? I could sure do sans-you right now."
