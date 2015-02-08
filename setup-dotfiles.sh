@@ -12,7 +12,7 @@ run() {
 
   git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
-  source bootstrap.sh
+  bash bootstrap.sh
   
   fancy_echo "Well, we're in Kansas now. Or maybe Arkansas."
 }
