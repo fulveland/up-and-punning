@@ -5,3 +5,9 @@ a new machine faaaaast.
 
 The main `setup.sh` script runs the other setup scripts. It should be safe, but
 fuck, I don't know. Good luck?
+
+### Yeah but what do I do to do the this?
+
+```bash
+$ git clone git@github.com:ivanreese/up-and-punning.git && cd $_ && bash setup.sh
+```
