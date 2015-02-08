@@ -23,28 +23,34 @@ brew_expand_alias() {
   brew info "$1" 2>/dev/null | head -1 | awk '{gsub(/:/, ""); print $1}'
 }
 
-
-if ! command -v brew >/dev/null; then
-  fancy_echo "Installing Homebrew"
-  curl -fsS 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
-fi
-
-
-fancy_echo "Updating Homebrew"
-brew update
+run() {
+  if ! command -v brew >/dev/null; then
+    fancy_echo "Installing Homebrew"
+    curl -fsS 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
+  fi
 
 
-brew_install 'git'
-brew_install 'rbenv'
-brew_install 'ruby-build'
-brew_install 'heroku-toolbelt'
+  fancy_echo "Updating Homebrew"
+  brew update
 
 
-# Hub gets special treatment because of the --HEAD and my sucking at sh
-if ! brew_is_installed 'hub'; then
-  fancy_echo "Installing hub"
-  brew install --HEAD hub
-fi
+  brew_install 'git'
+  brew_install 'rbenv'
+  brew_install 'ruby-build'
+  brew_install 'heroku-toolbelt'
 
 
-fancy_echo 'Cheers!'
+  # Hub gets special treatment because of the --HEAD and my sucking at sh
+  if ! brew_is_installed 'hub'; then
+    fancy_echo "Installing hub"
+    brew install --HEAD hub
+  fi
+
+
+  fancy_echo 'Cheers!'
+}
+
+read -p "May I interest you in a brew? (y/n) " yn
+case $yn in
+  [Yy]* ) run;;
+esac

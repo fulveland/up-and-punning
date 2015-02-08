@@ -14,9 +14,9 @@ run() {
 
   fancy_echo "Let's get bizzy!"
 
-  # bash setup-brew.sh
-  # bash setup-ruby.sh
-  # bash setup-ssh.sh
+  bash setup-brew.sh
+  bash setup-ruby.sh
+  bash setup-ssh.sh
 
   fancy_echo "Honey, you're home!"
 
