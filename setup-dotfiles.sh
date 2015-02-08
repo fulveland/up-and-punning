@@ -8,7 +8,7 @@ fancy_echo() {
 }
 
 run() {
-  fancy_echo "Is your name Dorthyfiles?"
+  fancy_echo "Hold on, Toto!"
 
   git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
