@@ -56,7 +56,7 @@ run() {
   fancy_echo 'I feel safer already.'
 }
 
-read -p "How many keys would you like to set up? " count
+read -p "How many SSH keys would you like to set up? " count
 case $count in
   [1-9]) run;;
 esac

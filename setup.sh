@@ -8,8 +8,6 @@ fancy_echo() {
 }
 
 run() {
-  # local bookmark=$(pwd)
-
   cd ${0%/*}
 
   fancy_echo "Let's get bizzy!"
@@ -20,8 +18,6 @@ run() {
   bash setup-dotfiles.sh
 
   fancy_echo "Honey, you're home!"
-
-  # cd $bookmark
 }
 
 
