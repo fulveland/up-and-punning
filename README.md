@@ -8,6 +8,8 @@ fuck, I don't know. Good luck?
 
 ### Yeah but what do I do to do the this?
 
+Just run this line in yer term:
+
 ```bash
-$ git clone git@github.com:ivanreese/up-and-punning.git && cd up-and-punning && bash setup.sh
+git clone git@github.com:ivanreese/up-and-punning.git && cd up-and-punning && bash setup.sh
 ```
