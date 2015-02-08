@@ -8,7 +8,7 @@ fancy_echo() {
 }
 
 run() {
-  local bookmark=$(pwd)
+  # local bookmark=$(pwd)
 
   cd ${0%/*}
 
@@ -21,7 +21,7 @@ run() {
 
   fancy_echo "Honey, you're home!"
 
-  cd $bookmark
+  # cd $bookmark
 }
 
 

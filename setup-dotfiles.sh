@@ -8,7 +8,7 @@ fancy_echo() {
 }
 
 run() {
-  local bookmark=$(pwd)
+  # local bookmark=$(pwd)
 
   fancy_echo "Is your name Dorthyfiles?"
 
@@ -18,7 +18,7 @@ run() {
 
   fancy_echo "Well, we're in Kansas now. Or maybe Arkansas."
 
-  cd $bookmark
+  # cd $bookmark
 }
 
 read -p "May I interest you in some dotfiles? (y/n) " yn
