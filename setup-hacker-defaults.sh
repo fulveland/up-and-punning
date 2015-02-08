@@ -14,7 +14,7 @@ fancy_echo "Just.. tell us your seeeeecrets.."
 # Ask for the administrator password up front
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+# Keep-alive: update existing sudo time stamp until .osx has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
@@ -111,10 +111,10 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 fancy_echo "Restart automatically if the computer freezes"
 sudo systemsetup -setrestartfreeze on
 
-fancy_echo "Disabling smart quotes as they’re annoying when typing code"
+fancy_echo "Disabling smart quotes as they're annoying when typing code"
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 
-fancy_echo "Disabling smart dashes as they’re annoying when typing code"
+fancy_echo "Disabling smart dashes as they're annoying when typing code"
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 ###############################################################################
@@ -254,7 +254,7 @@ fancy_echo "FUCK OFF DASHBOARD"
 defaults write com.apple.dashboard mcx-disabled -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
-fancy_echo "Don’t automatically rearrange Spaces based on most recent use"
+fancy_echo "Don't automatically rearrange Spaces based on most recent use"
 defaults write com.apple.dock mru-spaces -bool false
 
 fancy_echo "Automatically hide and show the Dock"
@@ -273,25 +273,25 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulat
 fancy_echo "Showing the full URL in the address bar (note: this still hides the scheme)"
 defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
-fancy_echo "Setting Safari’s home page to `about:blank` for faster loading"
+fancy_echo "Setting Safari's home page"
 defaults write com.apple.Safari HomePage -string ""
 
-fancy_echo "Prevent Safari from opening ‘safe’ files automatically after downloading"
+fancy_echo "Prevent Safari from opening 'safe' files automatically after downloading"
 defaults write com.apple.Safari AutoOpenSafeDownloads -bool false
 
-fancy_echo "Hiding Safari’s bookmarks bar by default"
+fancy_echo "Hiding Safari's bookmarks bar by default"
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 
-fancy_echo "Hiding Safari’s sidebar in Top Sites"
+fancy_echo "Hiding Safari's sidebar in Top Sites"
 defaults write com.apple.Safari ShowSidebarInTopSites -bool false
 
-fancy_echo "Enabling Safari’s debug menu"
+fancy_echo "Enabling Safari's debug menu"
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 
-fancy_echo "Making Safari’s search banners default to Contains instead of Starts With"
+fancy_echo "Making Safari's search banners default to Contains instead of Starts With"
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 
-fancy_echo "Removing useless icons from Safari’s bookmarks bar"
+fancy_echo "Removing useless icons from Safari's bookmarks bar"
 defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 
 fancy_echo "Enabling the Develop menu and the Web Inspector in Safari"
@@ -345,7 +345,7 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 fancy_echo "Disabling automatic emoji substitution (i.e. use plain text smileys)"
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
-fancy_echo "Disabling smart quotes as it’s annoying for messages that contain code"
+fancy_echo "Disabling smart quotes as it's annoying for messages that contain code"
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
 fancy_echo "Disabling continuous spell checking"
