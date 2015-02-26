@@ -49,8 +49,13 @@ run() {
     case $yn in
       [Yy]* ) open -a safari https://github.com/settings/ssh && read -p "Hit enter to continue" yn;;
     esac
-
-    echo "Don't worry, we cleared it!" | pbcopy
+    
+    read -p "Would you like to open Heroku to set it up? (y/n) " yn
+    case $yn in
+      [Yy]* ) open -a safari https://dashboard.heroku.com/account#ssh-keys && read -p "Hit enter to continue" yn;;
+    esac
+    
+    echo "Don't worry, we cleared the clipboard!" | pbcopy
   done
 
   fancy_echo 'I feel safer already.'
