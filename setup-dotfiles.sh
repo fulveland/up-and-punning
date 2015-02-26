@@ -10,7 +10,7 @@ fancy_echo() {
 
 fancy_echo "Hold on, Toto!"
 
-git clone https://github.com/ivanreese/dotfiles.git ~/.dotfiles
+git clone git@github.com:ivanreese/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 bash bootstrap.sh
 
