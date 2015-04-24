@@ -38,6 +38,7 @@ brew_install 'git'
 brew_install 'rbenv'
 brew_install 'ruby-build'
 brew_install 'heroku-toolbelt'
+brew_install 'cloc'
 
 
 # Hub gets special treatment because of the --HEAD and my sucking at sh
