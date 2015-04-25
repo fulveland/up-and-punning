@@ -29,6 +29,7 @@ Just.. so you know.. here's what it does.
   * `brew install rbenv`
   * `brew install ruby-build`
   * `brew install heroku-toolbelt`
+  * `brew install cloc`
 2. Ruby
   * Install the latest version and setup rbenv, if necessary, then...
   * `gem update --system`
