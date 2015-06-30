@@ -16,6 +16,10 @@ git clone git@github.com:ivanreese/up-and-punning.git && bash up-and-punning/set
 
 Watch out for that `rm -rf` yo ;)
 
+### Special Bonus Round
+
+Get the Webster's dictionary: http://jsomers.net/blog/dictionary
+
 ## So.. um.. come here often?
 
 No. You only run this to do an initial setup. There's no point in running it more than once.
