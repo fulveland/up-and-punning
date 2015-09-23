@@ -418,5 +418,7 @@ for app in "Activity Monitor" "cfprefsd" "Dock" "Finder" "Messages" "Safari" "Sy
   killall "${app}" > /dev/null 2>&1
 done
 
-fancy_echo "Done."
-fancy_echo "It'd be a shame if you were to.. logout/restart for these changes to take effect."
+echo
+fancy_echo "Now, stuff you need to do manually:"
+fancy_echo "Would you kindly: Set the Terminal Pro theme to use Inconsolata 16pt."
+fancy_echo "Would you kindly: Logout/restart for some earlier changes to take effect."
