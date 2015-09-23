@@ -34,7 +34,7 @@ gem update --system
 
 gem_install 'bundler'
 gem_install 'powder'
-gem_install 'tunnels'
+# gem_install 'tunnels' # Disabled because it errors on El Capitan
 gem_install 'rspec'
 
 fancy_echo "Rehashing rbenv"
