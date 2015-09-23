@@ -261,13 +261,16 @@ defaults write com.apple.dock autohide -bool true
 fancy_echo "Dock: Making Dock icons of hidden applications translucent"
 defaults write com.apple.dock showhidden -bool true
 
+echo
 fancy_echo "Dashboard: FUCK OFF DASHBOARD"
 defaults write com.apple.dashboard mcx-disabled -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
+echo
 fancy_echo "Spaces: Don't automatically rearrange Spaces based on most recent use"
 defaults write com.apple.dock mru-spaces -bool false
 
+echo
 fancy_echo "Launchpad: Adding iOS Simulator to Launchpad"
 sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/iOS Simulator.app" "/Applications/iOS Simulator.app"
 
@@ -343,6 +346,7 @@ fancy_echo "TextEdit: Open and save files as UTF-8 in TextEdit"
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
+echo
 fancy_echo "Disk Utility: Enabling the debug menu in Disk Utility"
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true
@@ -376,15 +380,9 @@ tell application "Terminal"
 	local allOpenedWindows
 	local initialOpenedWindows
 	local windowID
-	set themeName to "Solarized Dark xterm-256color"
+	set themeName to "Pro"
 	(* Store the IDs of all the open terminal windows. *)
 	set initialOpenedWindows to id of every window
-	(* Open the custom theme so that it gets added to the list
-	   of available terminal themes (note: this will open two
-	   additional terminal windows). *)
-	do shell script "open '$HOME/init/" & themeName & ".terminal'"
-	(* Wait a little bit to ensure that the custom theme is added. *)
-	delay 1
 	(* Set the custom theme as the default terminal theme. *)
 	set default settings to settings set themeName
 	(* Get the IDs of all the currently opened terminal windows. *)
