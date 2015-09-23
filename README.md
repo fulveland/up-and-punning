@@ -11,12 +11,12 @@ fuck, I don't know. Good luck?
 Just run this line in yer term:
 
 ```bash
-git clone git@github.com:ivanreese/up-and-punning.git && bash up-and-punning/setup.sh && rm -rf up-and-punning
+git clone https://github.com/ivanreese/up-and-punning.git && bash up-and-punning/setup.sh && rm -rf up-and-punning
 ```
 
 Watch out for that `rm -rf` yo ;)
 
-If you are asked about installing the Xcode Tools, click "Install" probably.
+If you are asked about installing the Xcode Tools, click "Install" probably. You'll need to re-run the above command again after it finished.
 
 ### Special Bonus Round
 
