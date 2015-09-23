@@ -27,6 +27,7 @@ run() {
   would_you_kindly hacker-defaults
 
   fancy_echo "Honey, you're home!"
+  fancy_echo "Remember, check the Notes.md on the github repo!"
 }
 
 
