@@ -16,6 +16,8 @@ git clone git@github.com:ivanreese/up-and-punning.git && bash up-and-punning/set
 
 Watch out for that `rm -rf` yo ;)
 
+If you are asked about installing the Xcode Tools, click "Install" probably.
+
 ### Special Bonus Round
 
 Get the Webster's dictionary: http://jsomers.net/blog/dictionary
