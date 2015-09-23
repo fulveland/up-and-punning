@@ -129,16 +129,18 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
-echo
 
+echo
 fancy_echo "Trackpad: enabling tap to click for this user and for the login screen"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+echo
 fancy_echo "Bluetooth: Increasing sound quality for Bluetooth headphones/headsets"
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
+echo
 fancy_echo "Keyboard: Enabling full keyboard access"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
