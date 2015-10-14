@@ -44,7 +44,7 @@ brew_install 'cloc'
 # Hub gets special treatment because of the --HEAD and my sucking at sh
 if ! brew_is_installed 'hub'; then
   fancy_echo "Installing hub"
-  brew install --HEAD hub
+  brew install hub
 fi
 
 
